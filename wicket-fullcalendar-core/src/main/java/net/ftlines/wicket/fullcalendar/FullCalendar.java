@@ -35,7 +35,7 @@ import org.apache.wicket.util.template.PackageTextTemplate;
 import org.apache.wicket.util.template.TextTemplate;
 
 public class FullCalendar extends AbstractFullCalendar implements IBehaviorListener {
-	private static final TextTemplate EVENTS = new PackageTextTemplate(FullCalendar.class, "FullCalendar.events.tpl");
+	private final TextTemplate EVENTS = new PackageTextTemplate(FullCalendar.class, "FullCalendar.events.tpl");
 
 	private final Config config;
 	private EventDroppedCallback eventDropped;
